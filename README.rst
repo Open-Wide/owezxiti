@@ -40,3 +40,24 @@ Installation
     $ bin/php/ezpgenerateautoloads.php --extension
     $ bin/php/ezcache.php --clear-all
 
+Usage
+=====
+
+1. Add the xtcore.js JavaScript file given by XiTi to your javascript design folder.
+
+2. Fill in your XiTi options below the site.ini's [SiteSettings] (XitiSd variable already handle http://log so you'll have to put only the id after this info):
+
+.. code-block:: ini
+
+    XitiSd=
+    XitiSite=
+    XitiN2=
+
+Example :
+
+.. code-block:: ini
+
+    XitiSd=a1234
+    XitiSite=123456
+    XitiN2=
+
