@@ -7,6 +7,10 @@
     $page_title = cond( $module_result.uri|trim('/')|eq(''), 'Accueil', $module_result.uri|explode('/(')[0]|explode('#')[0]|trim('/')|explode('/')|implode('::')|trim() )
 }
 
+{if $page_title|contains('owshop::orderview::')}
+    {set $page_title = 'owshop::orderview::ok'}
+{/if}
+
 <script type="text/javascript">
     <!--
         xtnv = document; //parent.document or top.document or document
